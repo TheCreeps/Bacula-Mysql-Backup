@@ -5,6 +5,14 @@ Script in shell for prepare incremental MySql backup from Bacula.
 
 ##Example of declaration
 
+-Copy the script into /usr/sbin/
+
+```
+$ /usr/sbin/bacula-mysql-backup.sh
+```
+
+- Open the configuration file on bacula directory
+
 ```sh
 $ nano /etc/bacula/bacula-dir.conf
 ```

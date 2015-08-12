@@ -7,8 +7,6 @@ dbuser="login"
 dbpass="secret"
 # a regex, passed to egrep -v, for which databases to ignore
 ignreg='^snort$|^information_schema$|^performance_schema$'
-# We need a timestamp# We need a timestamp
-tstamp=$(date +%Y%m%d-%H%M%S)
 # construct the destination including the timestamp
 dump_dir="$dst"
 tmp_dir="/srv/bacula/tmp"

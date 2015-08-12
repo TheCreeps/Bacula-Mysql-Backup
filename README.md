@@ -49,7 +49,7 @@ Job {
   Name = "Sauvegarde Mysql"
   Type = Backup
   Level = Incremental
-  Client = debian-8.1-client-fd # Change for client hostname
+  Client = debian-8.1-client-fd # Change for your client hostname
   FileSet = Mysql
   Schedule = WeeklyCycle
   Storage = File  # Change for your storage

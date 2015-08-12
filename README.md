@@ -15,7 +15,7 @@ $ chown bacula:bacula /etc/bacula/bacula-mysql-backup.conf
 
 ```sh
 $ chmod +x /usr/share/bacula-mysql-backup.sh
-$ chown bacula:bacula /usr/share/bacula-mysql-backup.sh
+$ chown bacula:bacula /usr/share/bacula-director/bacula-mysql-backup.sh
 ```
 
 - Open the configuration file on bacula directory.
@@ -56,6 +56,6 @@ Job {
   Pool = Mysql
   Messages = Standard
   Priority = 2
-  Run Before Job = "/usr/share/./bacula-mysql-backup.sh"
+  Run Before Job = "/usr/share/bacula-director/./bacula-mysql-backup.sh"
 }
 ```

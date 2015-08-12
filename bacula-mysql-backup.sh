@@ -1,16 +1,7 @@
 #!/bin/bash
 
-# Directory to store backups in
-dst="/srv/bacula/mysql"
-# The MySQL username and password
-dbuser="login"
-dbpass="secret"
-# a regex, passed to egrep -v, for which databases to ignore
-ignreg='^snort$|^information_schema$|^performance_schema$'
-# construct the destination including the timestamp
-dump_dir="$dst"
-tmp_dir="/srv/bacula/tmp"
-version_dir="/srv/bacula/version"
+#Include conf file
+. /etc/bacula/bacula-mysql-backup.conf
 
 #check if the dump directory exist , if not , we create him
 if [ ! -d "$dump_dir" ]

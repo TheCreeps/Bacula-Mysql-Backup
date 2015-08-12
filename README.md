@@ -14,7 +14,7 @@ $ chown bacula:bacula /etc/bacula/bacula-mysql-backup.conf
 - Copy bacula-mysql-backup.sh into /usr/share/ and add +x and verify the owner for bacula access.
 
 ```sh
-$ chmod +x /usr/share/bacula-mysql-backup.sh
+$ chmod +x /usr/share/bacula-director/bacula-mysql-backup.sh
 $ chown bacula:bacula /usr/share/bacula-director/bacula-mysql-backup.sh
 ```
 

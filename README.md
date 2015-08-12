@@ -56,6 +56,6 @@ Job {
   Pool = Mysql
   Messages = Standard
   Priority = 2
-  Run Before Job = "/usr/sbin/./bacula-mysql-backup.sh"
+  Run Before Job = "/usr/share/./bacula-mysql-backup.sh"
 }
 ```

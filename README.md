@@ -46,7 +46,7 @@ Job {
   Client = debian-8.1-involved-gaming-fd
   FileSet = Mysql
   Schedule = WeeklyCycle
-  Storage = File
+  Storage = File  # Change for your storage
   Pool = Mysql
   Messages = Standard
   Priority = 2

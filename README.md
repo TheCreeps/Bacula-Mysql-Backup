@@ -49,7 +49,7 @@ Job {
   Name = "Sauvegarde Mysql"
   Type = Backup
   Level = Incremental
-  Client = debian-8.1-involved-gaming-fd
+  Client = debian-8.1-client-fd
   FileSet = Mysql
   Schedule = WeeklyCycle
   Storage = File  # Change for your storage
